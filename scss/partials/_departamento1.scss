@@ -1,0 +1,69 @@
+.grid-depto1{
+    margin-top: 500px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "texto texto cartel cartel"
+    "texto texto cartel cartel"
+    ;
+    .txt-depto1{
+        grid-area: "texto";
+        display: flex;
+        align-items: center;
+        p{
+            text-align: center;
+            font-size: 18px;
+            padding: 10%;
+            font-family: $letraParrafos;
+            color: rgb(35, 106, 211);
+        }
+    }
+    .cartel-depto1{
+        grid-area: "cartel";
+        display: flex;
+        align-items: center;
+        img{
+            width: 80%;
+            border: solid white;
+            border-radius: 10px;
+            text-align: center;
+        }
+    }
+}
+.grid-galeria1{
+    margin-bottom: 10%;
+    .galeria-depto1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 10%;
+        padding: 40px;
+        img{
+            width: 300px;
+        }
+    }
+    .galeria-depto1-2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 40px;
+        img{
+            width: 300px;
+        }
+    }
+    .galeria-depto1-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 40px;
+        img{
+            width: 300px;
+        }
+    }
+}
+

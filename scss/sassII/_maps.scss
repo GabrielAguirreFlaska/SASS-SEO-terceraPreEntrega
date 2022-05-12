@@ -1,0 +1,15 @@
+@import "../variables/variables";
+
+$titulos:(
+    color1: $colorHUno,
+    color2: $colorHDos,
+    fuente1: $letrasHUno,
+    fuente2: $letrasHDos,
+);
+
+$tamanios:(
+    HUnoTab: $tamanioHUnoTablet,
+    HDosTab: $tamanioHDosTablet,
+    HUnoMob: $tamanioHUnoMobile,
+    HDosMob: $tamanioHDosMobile,
+);

@@ -1,0 +1,53 @@
+@import "../variables/variables";
+
+.departamentos-titulo{
+    h2{
+        padding-bottom: 50px;
+        margin-top: 15%;
+        text-align: center;
+        font-family: map-get($titulos, fuente2);
+        color: map-get($titulos, color2);
+    }
+}
+.departamentos{
+    display: grid;
+    grid-template-areas: 
+    "departamento-1 departamento-2 departamento-3";
+    grid-template-rows: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    .departamento-1{
+        grid-area: "departamento-1";
+        img{
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 2%;
+            &:hover{
+                width: 101%;
+                
+            }
+        }
+    }
+    .departamento-2{
+        grid-area: "departamento-2";
+        img{
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 2%;
+            &:hover{
+                width: 101%;
+            }
+        }
+    }
+    .departamento-3{
+        grid-area: "departamento-3";
+        img{
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 2%;
+            &:hover{
+                width: 101%;
+            }
+        }
+    }
+}

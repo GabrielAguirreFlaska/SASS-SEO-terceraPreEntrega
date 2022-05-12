@@ -1,0 +1,713 @@
+.header-footer, header, footer {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.grid-depto1 {
+  margin-top: 500px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "texto texto cartel cartel" "texto texto cartel cartel"; }
+  .grid-depto1 .txt-depto1 {
+    grid-area: "texto";
+    display: flex;
+    align-items: center; }
+    .grid-depto1 .txt-depto1 p {
+      text-align: center;
+      font-size: 18px;
+      padding: 10%;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      color: #236ad3; }
+  .grid-depto1 .cartel-depto1 {
+    grid-area: "cartel";
+    display: flex;
+    align-items: center; }
+    .grid-depto1 .cartel-depto1 img {
+      width: 80%;
+      border: solid white;
+      border-radius: 10px;
+      text-align: center; }
+
+.grid-galeria1 {
+  margin-bottom: 10%; }
+  .grid-galeria1 .galeria-depto1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    padding: 40px; }
+    .grid-galeria1 .galeria-depto1 img {
+      width: 300px; }
+  .grid-galeria1 .galeria-depto1-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px; }
+    .grid-galeria1 .galeria-depto1-2 img {
+      width: 300px; }
+  .grid-galeria1 .galeria-depto1-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 40px; }
+    .grid-galeria1 .galeria-depto1-1 img {
+      width: 300px; }
+
+@media (min-width: 800px) {
+  #div-contacto {
+    padding: 0 4rem; }
+    #div-contacto .contacto-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr; }
+      #div-contacto .contacto-wrapper > * {
+        padding: 2em; }
+      #div-contacto .contacto-wrapper .contacto-info h4, #div-contacto .contacto-wrapper .contacto-info ul, #div-contacto .contacto-wrapper .contacto-info p {
+        padding: 1em;
+        text-align: left; } }
+
+.header-footer, header, footer {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100; }
+  header .container__menu {
+    width: 100%;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0px 20px;
+    margin-bottom: 0px; }
+    header .container__menu .menu {
+      max-width: 1200px;
+      margin: auto;
+      height: 100%; }
+      header .container__menu .menu nav {
+        height: 100%; }
+        header .container__menu .menu nav > ul {
+          height: 100%;
+          display: flex; }
+          header .container__menu .menu nav > ul > li > a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 14px;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: beige;
+            transition: all 300ms ease; }
+            header .container__menu .menu nav > ul > li > a:hover {
+              transform: scale(1.1);
+              background-color: beige;
+              color: #000000;
+              box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+        header .container__menu .menu nav ul li {
+          height: 100%;
+          list-style: none;
+          position: relative; }
+
+nav ul li ul {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  position: absolute;
+  top: 90px;
+  left: -5px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  transition: all 300ms ease; }
+  nav ul li ul li a {
+    display: block;
+    color: #000000;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease; }
+    nav ul li ul li a:hover {
+      background: #000000;
+      color: beige;
+      transform: scale(1.1);
+      padding-left: 30px;
+      font-size: 14px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
+
+nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 70px; }
+
+nav ul li ul:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+  position: absolute;
+  top: -12px;
+  left: 20px; }
+
+.icon__menu {
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+  width: 26px;
+  height: 100%;
+  align-items: center;
+  display: none; }
+
+#label__check {
+  width: 26px;
+  height: 100%;
+  display: none; }
+
+#check__menu {
+  display: none; }
+
+div h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: beige;
+  text-align: center;
+  padding-top: 400px; }
+
+.titulo-hygge h2 {
+  font-family: "Lora", serif;
+  color: beige;
+  text-align: center; }
+
+.nosotros-titulo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .nosotros-titulo h2 {
+    font-family: "Lora", serif;
+    color: #236ad3;
+    margin-top: 30%; }
+
+.seccion-nosotros {
+  margin: 40px;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .seccion-nosotros p {
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: #236ad3; }
+
+.departamentos-titulo h2 {
+  padding-bottom: 50px;
+  margin-top: 15%;
+  text-align: center;
+  font-family: "Lora", serif;
+  color: #236ad3; }
+
+.departamentos {
+  display: grid;
+  grid-template-areas: "departamento-1 departamento-2 departamento-3";
+  grid-template-rows: auto;
+  margin-left: 10px;
+  margin-right: 10px; }
+  .departamentos .departamento-1 {
+    grid-area: "departamento-1"; }
+    .departamentos .departamento-1 img {
+      width: 100%;
+      border: 2px solid white;
+      border-radius: 2%; }
+      .departamentos .departamento-1 img:hover {
+        width: 101%; }
+  .departamentos .departamento-2 {
+    grid-area: "departamento-2"; }
+    .departamentos .departamento-2 img {
+      width: 100%;
+      border: 2px solid white;
+      border-radius: 2%; }
+      .departamentos .departamento-2 img:hover {
+        width: 101%; }
+  .departamentos .departamento-3 {
+    grid-area: "departamento-3"; }
+    .departamentos .departamento-3 img {
+      width: 100%;
+      border: 2px solid white;
+      border-radius: 2%; }
+      .departamentos .departamento-3 img:hover {
+        width: 101%; }
+
+#galeria {
+  margin-bottom: 11%;
+  margin-top: 20%; }
+  #galeria .galeria-titulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    #galeria .galeria-titulo h2 {
+      text-align: center;
+      color: #236ad3;
+      padding-top: 3%;
+      font-family: "Lora", serif; }
+
+.galeria-fila1 {
+  padding-top: 10%;
+  padding-bottom: 1%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .galeria-fila1 img {
+    border: 2px solid black;
+    border-radius: 2%;
+    width: 350px; }
+
+.header-footer, header, footer {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+    .pie-pagina .grupo-1 .box figure {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .pie-pagina .grupo-1 .box figure img {
+        width: 250px; }
+    .pie-pagina .grupo-1 .box h2 {
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 20px; }
+    .pie-pagina .grupo-1 .box p {
+      color: #efefef;
+      margin-bottom: 10px; }
+    .pie-pagina .grupo-1 .box .red-social a {
+      display: inline-block;
+      text-decoration: none;
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      color: #fff;
+      margin-right: 10px;
+      background-color: #0d2033;
+      text-align: center;
+      transition: all 30ms ease; }
+      .pie-pagina .grupo-1 .box .red-social a:hover {
+        color: aquamarine; }
+  .pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff; }
+    .pie-pagina .grupo-2 small {
+      font-size: 15px; }
+
+.TituloDeContacto {
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: beige;
+  padding-top: 400px;
+  font-size: 25px;
+  text-transform: uppercase; }
+
+#div-contacto {
+  background-color: #f1f1f1;
+  color: #fff;
+  padding: 0 1.5em;
+  margin-top: 30%;
+  margin-bottom: 20%; }
+  #div-contacto #contacto {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1,5em; }
+    #div-contacto #contacto .contacto-titulo {
+      text-align: center;
+      font-size: 2em;
+      font-family: 'Lora', serif;
+      color: #236ad3;
+      margin-bottom: 3%; }
+    #div-contacto #contacto .contacto-wrapper {
+      box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
+      #div-contacto #contacto .contacto-wrapper > * {
+        padding: 1em; }
+      #div-contacto #contacto .contacto-wrapper .contacto-form {
+        background-color: #1d1da7; }
+        #div-contacto #contacto .contacto-wrapper .contacto-form form {
+          display: grid;
+          grid-template-columns: 1fr 1fr; }
+          #div-contacto #contacto .contacto-wrapper .contacto-form form .block {
+            grid-column: 1/3; }
+          #div-contacto #contacto .contacto-wrapper .contacto-form form p {
+            margin: 0;
+            padding: 1em; }
+          #div-contacto #contacto .contacto-wrapper .contacto-form form button, #div-contacto #contacto .contacto-wrapper .contacto-form form input, #div-contacto #contacto .contacto-wrapper .contacto-form form textarea {
+            width: 100%;
+            padding: .7em;
+            border: none;
+            background: none;
+            outline: 0;
+            border-bottom: 1px solid #236ad3;
+            color: #fff; }
+          #div-contacto #contacto .contacto-wrapper .contacto-form form button {
+            background: #236ad3;
+            color: #000000;
+            border: 0;
+            text-transform: uppercase;
+            padding: 1em; }
+            #div-contacto #contacto .contacto-wrapper .contacto-form form button:hover, #div-contacto #contacto .contacto-wrapper .contacto-form form button:focus {
+              background: #d63031;
+              color: #fff;
+              transition: background-color 1s ease-out;
+              outline: 0; }
+
+.contacto-info {
+  background-color: #236ad3; }
+  .contacto-info h4, .contacto-info ul, .contacto-info p {
+    text-align: center;
+    margin: 0 0 1rem 0; }
+  .contacto-info ul {
+    list-style: none;
+    padding: 0; }
+    .contacto-info ul li {
+      padding: .4em; }
+
+body {
+  background-image: url(../img/areacomun/IMG_20220403_120526.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white; }
+
+@media screen and (max-width: 768px) {
+  nav > ul {
+    flex-direction: column;
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 0px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden; }
+    nav > ul > li > a:hover {
+      transform: scale(1); }
+    nav > ul > li:hover ul {
+      top: 50px; }
+  nav ul li ul {
+    left: 90px; }
+  #label__check {
+    display: block; }
+  .icon__menu {
+    display: flex; }
+  #check__menu:checked ~ nav > ul {
+    height: 300px;
+    visibility: visible;
+    opacity: 1; }
+  div h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: beige;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 20px; }
+  .titulo-hygge h2 {
+    font-family: "Lora", serif;
+    color: beige;
+    text-align: center;
+    font-size: 15px; }
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; }
+  body {
+    background-image: url(../img/areacomun/IMG_20220403_120526.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .titulo-hygge h1 {
+    margin-top: 200px; }
+  .grid-depto1 {
+    margin-top: 250px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto texto texto texto" "cartel cartel cartel cartel"; }
+    .grid-depto1 .txt-depto1 {
+      grid-area: "texto";
+      display: flex;
+      align-items: center; }
+      .grid-depto1 .txt-depto1 p {
+        text-align: center;
+        font-size: 14px;
+        padding: 10%;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: #236ad3; }
+    .grid-depto1 .cartel-depto1 {
+      grid-area: "cartel";
+      display: flex;
+      align-items: center; }
+      .grid-depto1 .cartel-depto1 img {
+        width: 100%;
+        border: solid white;
+        border-radius: 10px;
+        text-align: center; }
+    .grid-depto1 .galeria-depto1 {
+      padding: 30px; }
+      .grid-depto1 .galeria-depto1 img {
+        width: 200px; }
+    .grid-depto1 .galeria-depto1-1 {
+      padding: 30px; }
+      .grid-depto1 .galeria-depto1-1 img {
+        width: 200px; }
+    .grid-depto1 .galeria-depto1-2 {
+      padding: 30px; }
+      .grid-depto1 .galeria-depto1-2 img {
+        width: 200px; }
+  .TituloDeContacto {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: beige;
+    padding-top: 200px;
+    font-size: 15px;
+    text-transform: uppercase; } }
+
+@media screen and (max-width: 720px) {
+  .departamentos {
+    display: grid;
+    grid-template-areas: "departamento-1 departamento-2"  "departamento-3";
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .galeria-fila1 img {
+    border: 1px solid black;
+    border-radius: 2%;
+    width: 150px; }
+  .nosotros-titulo h2 {
+    font-family: "Lora", serif;
+    color: #236ad3;
+    margin-top: 28%;
+    font-size: 20px; }
+  .seccion-nosotros {
+    margin: 0px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 200px; }
+    .seccion-nosotros p {
+      text-align: center;
+      padding: 0px;
+      font-size: 15px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      color: #236ad3;
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 480px) {
+  .departamentos {
+    display: grid;
+    grid-template-areas: "departamento-1"  "departamento-2"  "departamento-3";
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    margin-left: 10px;
+    margin-right: 10px; }
+  .TituloDeContacto {
+    margin-top: 250px;
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: beige;
+    font-size: 20px;
+    text-transform: uppercase; }
+  #div-contacto {
+    padding: 0; }
+    #div-contacto .contacto-wrapper {
+      display: grid;
+      grid-template-columns: 1fr; }
+      #div-contacto .contacto-wrapper > * {
+        padding: 2em; }
+      #div-contacto .contacto-wrapper .contacto-info h4, #div-contacto .contacto-wrapper .contacto-info ul, #div-contacto .contacto-wrapper .contacto-info p {
+        padding: 1em;
+        text-align: left;
+        font-size: 10px;
+        text-align: center; }
+      #div-contacto .contacto-wrapper .contacto-form form p {
+        margin: 0;
+        padding: 3em;
+        font-size: 10px; }
+      #div-contacto .contacto-wrapper .contacto-form form button, #div-contacto .contacto-wrapper .contacto-form form input, #div-contacto .contacto-wrapper .contacto-form form textarea {
+        width: 100%;
+        padding: .7em;
+        border: none;
+        background: none;
+        outline: 0;
+        border-bottom: 1px solid #236ad3;
+        color: #fff; }
+      #div-contacto .contacto-wrapper .contacto-form form button {
+        background: #236ad3;
+        color: #000000;
+        border: 0;
+        text-transform: uppercase;
+        padding: 1em;
+        font-size: 12px; }
+  nav > ul {
+    flex-direction: column;
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    top: 158px;
+    width: 100%;
+    height: 0px;
+    transition: all 300ms ease;
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden; }
+    nav > ul > li > a:hover {
+      transform: scale(1); }
+    nav > ul > li:hover ul {
+      top: 50px; }
+  nav ul li ul {
+    left: 90px; }
+  #label__check {
+    display: block; }
+  .icon__menu {
+    display: flex; }
+  #check__menu:checked ~ nav > ul {
+    height: 300px;
+    visibility: visible;
+    opacity: 1; }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; }
+    .pie-pagina .grupo-1 .box p {
+      color: #efefef;
+      margin-bottom: 10px;
+      font-size: 10px;
+      text-align: center; }
+    .pie-pagina .grupo-1 .box figure img {
+      width: 120px; }
+    .pie-pagina .grupo-1 .box h2 {
+      color: #fff;
+      margin-bottom: 25px;
+      font-size: 14px;
+      text-align: center; }
+    .pie-pagina .grupo-1 .red-social {
+      text-align: center; }
+      .pie-pagina .grupo-1 .red-social a {
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        margin-right: 10px;
+        background-color: #0d2033;
+        text-align: center;
+        transition: all 30ms ease; }
+        .pie-pagina .grupo-1 .red-social a:hover {
+          color: aquamarine; }
+  .pie-pagina .grupo-2 small {
+    font-size: 7px; }
+  .galeria-fila1 img {
+    border: 1px solid black;
+    border-radius: 2%;
+    width: 110px; }
+  div h1 {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    padding-top: 150px;
+    font-size: 25px; }
+  .titulo-hygge h2 {
+    font-size: 20px;
+    margin-bottom: 100px; }
+  .nosotros-titulo h2 {
+    font-family: "Lora", serif;
+    margin-top: 8%;
+    font-size: 20px; }
+  .seccion-nosotros {
+    margin: 0px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 20px; }
+    .seccion-nosotros p {
+      text-align: center;
+      padding: 0px;
+      font-size: 10px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      margin-bottom: 30px; }
+  body {
+    background-image: url(../img/332180776.jpg); }
+  #departamentos {
+    background-image: none; }
+  .galeria-depto1 {
+    padding: 15px; }
+    .galeria-depto1 img {
+      width: 120px; }
+  .galeria-depto1-1 {
+    padding: 15px; }
+    .galeria-depto1-1 img {
+      width: 120px; }
+  .galeria-depto1-2 {
+    padding: 15px; }
+    .galeria-depto1-2 img {
+      width: 120px; }
+  .grid-depto1 {
+    margin-top: 300px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .grid-depto1 .txt-depto1 {
+      grid-area: "texto";
+      display: flex;
+      align-items: center; }
+      .grid-depto1 .txt-depto1 p {
+        text-align: center;
+        font-size: 14px;
+        padding: 10%;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        color: #236ad3; }
+    .grid-depto1 .cartel-depto1 {
+      grid-area: "cartel";
+      display: flex;
+      align-items: center; }
+      .grid-depto1 .cartel-depto1 img {
+        width: 100%;
+        border: solid white;
+        border-radius: 10px;
+        text-align: center;
+        padding: 10px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none; }

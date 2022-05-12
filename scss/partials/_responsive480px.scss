@@ -1,0 +1,275 @@
+@import "../variables/variables";
+
+@media screen and (max-width: 480px) {
+
+    //departamentos
+    .departamentos{
+        display: grid;
+        grid-template-areas: 
+        "departamento-1" 
+        "departamento-2" 
+        "departamento-3";
+        grid-template-rows: auto;
+        grid-gap: 1em;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    //contacto
+    .TituloDeContacto{
+        margin-top: 250px;
+        text-align: center;
+        font-family: map-get($titulos, fuente1);
+        color: map-get($titulos, color1);
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    #div-contacto {
+        padding: 0;
+        .contacto-wrapper{
+            display: grid;
+            grid-template-columns: 1fr ;
+            > * {
+                padding: 2em;
+            }
+            .contacto-info{
+                h4, ul, p{
+                    padding: 1em;
+                    text-align: left;
+                    font-size: 10px;
+                    text-align: center;
+                }
+            }
+            .contacto-form{
+                form{
+                    p{
+                        margin: 0;
+                        padding: 3em;
+                        font-size: 10px;
+                    }
+                    button, input, textarea{
+                        width: 100%;
+                        padding: .7em;
+                        border: none;
+                        background: none;
+                        outline: 0;
+                        border-bottom: 1px solid rgb(35, 106, 211);
+                        color: #fff;
+                    }
+                    button{
+                        background: rgb(35, 106, 211);
+                        color: #000000;
+                        border: 0;
+                        text-transform:uppercase;
+                        padding: 1em;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    //barra de navegacion
+    nav{
+        > ul{
+            flex-direction: column;
+            background-color: #000000;
+            position: fixed;
+            left: 0;
+            top: 158px;
+            width: 100%;
+            height: 0px;
+            transition: all 300ms ease;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            > li{
+                > a{
+                    &:hover{
+                        transform: scale(1);
+                    }
+                }
+                &:hover{
+                    ul{
+                        top: 50px;
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        ul{
+            li{
+                ul{
+                    left: 90px;
+                }
+            }
+        }
+    }
+    #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+    //pie de pagina
+    .pie-pagina{
+        .grupo-1{
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 30px;
+            padding: 35px 0px;
+            .box{
+                p{
+                    color: #efefef;
+                    margin-bottom: 10px;
+                    font-size: 10px;
+                    text-align: center;
+                }
+                figure{
+                    img{
+                        width: 120px;
+                    }
+                }
+                h2{
+                    color: #fff;
+                    margin-bottom: 25px;
+                    font-size: 14px;
+                    text-align: center;
+                }
+            }
+            .red-social{
+                text-align: center;
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    width: 45px;
+                    height: 45px;
+                    line-height: 45px;
+                    color: #fff;
+                    margin-right: 10px;
+                    background-color: #0d2033;
+                    text-align: center;
+                    transition: all 30ms ease;
+                    &:hover{
+                        color: aquamarine;
+                    }
+                }
+            }
+        }
+        .grupo-2{
+            small{
+                font-size: 7px;
+            }
+        }
+    }
+    //galeria
+    .galeria-fila1 img{
+        border: 1px solid black;
+        border-radius: 2%;
+        width: 110px;
+    }
+    //titulo y nosotros
+    div{
+        h1{
+            font-family:map-get($titulos, fuente1);
+            padding-top: 150px;
+            font-size: map-get($tamanios, HUnoMob);
+        }
+    }
+    .titulo-hygge{
+        h2{
+            font-size: map-get($tamanios, HDosMob);
+            margin-bottom: 100px;
+        }
+    }
+    .nosotros-titulo{
+        h2{
+            font-family: map-get($titulos, fuente2);
+            margin-top: 8%;
+            font-size: map-get($tamanios, HDosMob);
+        }
+    }
+    .seccion-nosotros{
+        margin: 0px;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        p{
+            text-align: center;
+            padding: 0px;
+            font-size: 10px;
+            font-family: $letraParrafos;
+            margin-bottom: 30px;
+        }
+    }
+    //fondos
+    body{
+        background-image: url(../img/332180776.jpg);
+    }
+    #departamentos{
+        background-image: none;
+    }
+    //departamentos 1,2 y 3
+    .galeria-depto1{
+        padding: 15px;
+        img{
+            width: 120px;
+        }
+    }
+    .galeria-depto1-1{
+        padding: 15px;
+        img{
+            width: 120px;
+        }
+    }
+    .galeria-depto1-2{
+        padding: 15px;
+        img{
+            width: 120px;
+        }
+    }
+    .grid-depto1{
+        margin-top: 300px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .txt-depto1{
+            grid-area: "texto";
+            display: flex;
+            align-items: center;
+            p{
+                text-align: center;
+                font-size: 14px;
+                padding: 10%;
+                font-family: $letraParrafos;
+                color: rgb(35, 106, 211);
+            }
+        }
+        .cartel-depto1{
+            grid-area: "cartel";
+            display: flex;
+            align-items: center;
+            img{
+                width: 100%;
+                border: solid white;
+                border-radius: 10px;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+
+
+
+
+
+}

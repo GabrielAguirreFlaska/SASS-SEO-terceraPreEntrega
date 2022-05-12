@@ -1,0 +1,31 @@
+@import "../variables/variables";
+
+#galeria{
+    margin-bottom: 11%;
+    margin-top: 20%;
+    .galeria-titulo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        h2{
+            text-align: center;
+            color: map-get($titulos, color2);
+            padding-top: 3%;
+            font-family: map-get($titulos, fuente2);
+        }
+    }
+}
+.galeria-fila1{
+    padding-top: 10%;
+    padding-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    img{
+        border: 2px solid black;
+        border-radius: 2%;
+        width: 350px;
+    }
+}

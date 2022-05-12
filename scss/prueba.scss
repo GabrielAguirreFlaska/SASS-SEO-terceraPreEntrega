@@ -1,0 +1,24 @@
+@import "variables/variables";
+@import "sassII/extend";
+@import "sassII/maps";
+@import "sassII/condicionales";
+@import "sassII/mixins";
+@import "partials/departamento1";
+@import "partials/responsive800px";
+@import "partials/header";
+@import "partials/nosotros";
+@import "partials/departamentos";
+@import "partials/galeria";
+@import "partials/footer";
+@import "partials/contacto.scss";
+@import "partials/body";
+@import "partials/responsive768px";
+@import "partials/responsive720px";
+@import "partials/responsive480px";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}

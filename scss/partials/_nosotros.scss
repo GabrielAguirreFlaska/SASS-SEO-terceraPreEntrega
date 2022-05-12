@@ -1,0 +1,40 @@
+@import "../variables/variables";
+
+div{
+    h1{
+        font-family: map-get($titulos, fuente1);
+        color: map-get($titulos, color1);
+        text-align: center;
+        padding-top: 400px;
+    }
+}
+.titulo-hygge{
+    h2{
+        font-family: map-get($titulos, fuente2);
+        color: map-get($titulos, color1);
+        text-align: center;
+    }
+}
+
+.nosotros-titulo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    h2{
+        font-family: map-get($titulos, fuente2);
+        color: map-get($titulos, color2);
+        margin-top: 30%;
+    }
+}
+
+.seccion-nosotros{
+    margin: 40px;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    p{
+        @include nosotros-parrafo;
+    }
+}

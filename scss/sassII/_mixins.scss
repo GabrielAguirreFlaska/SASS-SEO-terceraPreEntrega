@@ -1,0 +1,9 @@
+@import "../variables/variables";
+
+@mixin nosotros-parrafo {
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+    font-family: $letraParrafos;
+    color: map-get($titulos, color2);
+}
