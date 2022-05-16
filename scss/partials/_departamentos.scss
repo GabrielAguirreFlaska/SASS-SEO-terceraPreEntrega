@@ -1,15 +1,142 @@
 @import "../variables/variables";
 
-.departamentos-titulo{
-    h2{
-        padding-bottom: 50px;
-        margin-top: 15%;
+.departamentos-titulo {
+    h2 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin-top: 10%;
+        margin-bottom: 10%;
         text-align: center;
+        font-size: 35px;
         font-family: map-get($titulos, fuente2);
         color: map-get($titulos, color2);
+        background-image: url(https://cdn.create.vista.com/api/media/medium/479950672/stock-photo-bed-white-bedding-modern-bedroom?token=);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
     }
 }
+
 .departamentos{
+    display: grid;
+    grid-template-areas: 
+    "departamento-1 departamento-2 departamento-3";
+    grid-template-rows: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    .departamento-1 {
+        grid-area: "departamento-1";
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: 17px;
+        transition: 1s;
+        color: $colorHDos;
+        &:hover {
+            font-size: 21px;
+        }
+        img {
+            transition: 1s;
+            width: 95%;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .textoCentrado {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: $letrasHDos;
+        }
+    }
+    .departamento-2{
+        grid-area: "departamento-2";
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: 17px;
+        font-family: $letrasHDos;
+        color: $colorHDos;
+        transition: 1s;
+        &:hover {
+            font-size: 21px;
+        }
+        img {
+            transition: 1s;
+            width: 95%;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .textoCentrado {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: $letrasHDos;
+        }
+    }
+    .departamento-3{
+        grid-area: "departamento-3";
+        position: relative;
+        display: inline-block;
+        text-align: center;
+        font-size: 17px;
+        font-family: $letrasHDos;
+        color: $colorHDos;
+        transition: 1s;
+        &:hover {
+            font-size: 21px;
+        }
+        img {
+            transition: 1s;
+            width: 95%;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        .textoCentrado {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: $letrasHDos;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.departamentos{
     display: grid;
     grid-template-areas: 
     "departamento-1 departamento-2 departamento-3";
@@ -50,4 +177,4 @@
             }
         }
     }
-}
+}*/

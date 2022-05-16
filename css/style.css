@@ -81,7 +81,7 @@ header {
   header .container__menu {
     width: 100%;
     height: 70px;
-    background: rgba(0, 0, 0, 0.9);
+    background: white;
     padding: 0px 20px;
     margin-bottom: 0px; }
     header .container__menu .menu {
@@ -99,14 +99,13 @@ header {
             display: flex;
             align-items: center;
             padding: 14px;
-            text-transform: uppercase;
             font-size: 14px;
-            color: beige;
+            color: #4e4e4e;
             transition: all 300ms ease; }
             header .container__menu .menu nav > ul > li > a:hover {
               transform: scale(1.1);
-              background-color: beige;
-              color: #000000;
+              background-color: rgba(0, 0, 0, 0.9);
+              color: white;
               box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
         header .container__menu .menu nav ul li {
           height: 100%;
@@ -117,7 +116,7 @@ nav ul li ul {
   width: 200px;
   display: flex;
   flex-direction: column;
-  background-color: beige;
+  background-color: white;
   position: absolute;
   top: 90px;
   left: -5px;
@@ -129,7 +128,7 @@ nav ul li ul {
   transition: all 300ms ease; }
   nav ul li ul li a {
     display: block;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.9);
     padding: 6px;
     padding-left: 14px;
     margin-top: 10px;
@@ -137,8 +136,8 @@ nav ul li ul {
     text-transform: uppercase;
     transition: all 300ms ease; }
     nav ul li ul li a:hover {
-      background: #000000;
-      color: beige;
+      background: rgba(0, 0, 0, 0.9);
+      color: white;
       transform: scale(1.1);
       padding-left: 30px;
       font-size: 14px;
@@ -181,7 +180,8 @@ div h1 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: beige;
   text-align: center;
-  padding-top: 400px; }
+  padding-top: 400px;
+  font-size: 45px; }
 
 .titulo-hygge h2 {
   font-family: "Lora", serif;
@@ -196,7 +196,8 @@ div h1 {
   .nosotros-titulo h2 {
     font-family: "Lora", serif;
     color: #236ad3;
-    margin-top: 30%; }
+    margin-top: 30%;
+    font-size: 35px; }
 
 .seccion-nosotros {
   margin: 40px;
@@ -212,46 +213,138 @@ div h1 {
     color: #236ad3; }
 
 .departamentos-titulo h2 {
-  padding-bottom: 50px;
-  margin-top: 15%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   text-align: center;
+  font-size: 35px;
   font-family: "Lora", serif;
-  color: #236ad3; }
+  color: #236ad3;
+  background-image: url(https://cdn.create.vista.com/api/media/medium/479950672/stock-photo-bed-white-bedding-modern-bedroom?token=);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
 
 .departamentos {
   display: grid;
   grid-template-areas: "departamento-1 departamento-2 departamento-3";
   grid-template-rows: auto;
   margin-left: 10px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-top: 20%;
+  margin-bottom: 20%; }
   .departamentos .departamento-1 {
-    grid-area: "departamento-1"; }
+    grid-area: "departamento-1";
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    transition: 1s;
+    color: #236ad3; }
+    .departamentos .departamento-1:hover {
+      font-size: 21px; }
     .departamentos .departamento-1 img {
-      width: 100%;
-      border: 2px solid white;
-      border-radius: 2%; }
+      transition: 1s;
+      width: 95%; }
       .departamentos .departamento-1 img:hover {
-        width: 101%; }
+        opacity: 0.5; }
+    .departamentos .departamento-1 .textoCentrado {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Lora", serif; }
   .departamentos .departamento-2 {
-    grid-area: "departamento-2"; }
+    grid-area: "departamento-2";
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Lora", serif;
+    color: #236ad3;
+    transition: 1s; }
+    .departamentos .departamento-2:hover {
+      font-size: 21px; }
     .departamentos .departamento-2 img {
-      width: 100%;
-      border: 2px solid white;
-      border-radius: 2%; }
+      transition: 1s;
+      width: 95%; }
       .departamentos .departamento-2 img:hover {
-        width: 101%; }
+        opacity: 0.5; }
+    .departamentos .departamento-2 .textoCentrado {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Lora", serif; }
   .departamentos .departamento-3 {
-    grid-area: "departamento-3"; }
+    grid-area: "departamento-3";
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 17px;
+    font-family: "Lora", serif;
+    color: #236ad3;
+    transition: 1s; }
+    .departamentos .departamento-3:hover {
+      font-size: 21px; }
     .departamentos .departamento-3 img {
-      width: 100%;
-      border: 2px solid white;
-      border-radius: 2%; }
+      transition: 1s;
+      width: 95%; }
       .departamentos .departamento-3 img:hover {
-        width: 101%; }
+        opacity: 0.5; }
+    .departamentos .departamento-3 .textoCentrado {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Lora", serif; }
 
+/*.departamentos{
+    display: grid;
+    grid-template-areas: 
+    "departamento-1 departamento-2 departamento-3";
+    grid-template-rows: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    .departamento-1{
+        grid-area: "departamento-1";
+        img{
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 2%;
+            &:hover{
+                width: 101%;
+                
+            }
+        }
+    }
+    .departamento-2{
+        grid-area: "departamento-2";
+        img{
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 2%;
+            &:hover{
+                width: 101%;
+            }
+        }
+    }
+    .departamento-3{
+        grid-area: "departamento-3";
+        img{
+            width: 100%;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 2%;
+            &:hover{
+                width: 101%;
+            }
+        }
+    }
+}*/
 #galeria {
   margin-bottom: 11%;
-  margin-top: 20%; }
+  margin-top: 10%; }
   #galeria .galeria-titulo {
     display: flex;
     flex-direction: column;
@@ -260,8 +353,14 @@ div h1 {
     #galeria .galeria-titulo h2 {
       text-align: center;
       color: #236ad3;
-      padding-top: 3%;
-      font-family: "Lora", serif; }
+      padding-top: 80px;
+      padding-bottom: 80px;
+      font-family: "Lora", serif;
+      font-size: 35px;
+      background-image: url(https://cdn.create.vista.com/api/media/medium/479950672/stock-photo-bed-white-bedding-modern-bedroom?token=);
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover; }
 
 .galeria-fila1 {
   padding-top: 10%;
@@ -271,9 +370,9 @@ div h1 {
   flex-wrap: wrap;
   justify-content: space-evenly; }
   .galeria-fila1 img {
-    border: 2px solid black;
+    border: 2px solid white;
     border-radius: 2%;
-    width: 350px; }
+    width: 280px; }
 
 .header-footer, header, footer {
   background-color: rgba(0, 0, 0, 0.9); }
@@ -448,6 +547,27 @@ body {
     background-image: url(../img/areacomun/IMG_20220403_120526.jpg);
     background-repeat: no-repeat;
     background-size: contain; }
+  #galeria .galeria-titulo h2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 25px; }
+  .galeria-fila1 img {
+    border: 1px solid white;
+    border-radius: 2%;
+    width: 200px; }
+  .departamentos-titulo h2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 25px; }
+  .departamentos {
+    margin-top: 20%;
+    margin-bottom: 20%; }
+    .departamentos .departamento-1 {
+      font-size: 14px; }
+    .departamentos .departamento-2 {
+      font-size: 14px; }
+    .departamentos .departamento-3 {
+      font-size: 14px; }
   .titulo-hygge h1 {
     margin-top: 200px; }
   .grid-depto1 {
@@ -503,16 +623,36 @@ body {
     grid-template-rows: auto;
     grid-gap: 1em;
     margin-left: 10px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    margin-top: 20%;
+    margin-bottom: 20%; }
+    .departamentos .departamento-1 {
+      font-size: 10px; }
+      .departamentos .departamento-1:hover {
+        font-size: 15px; }
+      .departamentos .departamento-1 img {
+        width: 100%; }
+    .departamentos .departamento-2 {
+      font-size: 10px; }
+      .departamentos .departamento-2:hover {
+        font-size: 15px; }
+      .departamentos .departamento-2 img {
+        width: 100%; }
+    .departamentos .departamento-3 {
+      font-size: 10px; }
+      .departamentos .departamento-3:hover {
+        font-size: 15px; }
+      .departamentos .departamento-3 img {
+        width: 100%; }
   .galeria-fila1 img {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 2%;
     width: 150px; }
   .nosotros-titulo h2 {
     font-family: "Lora", serif;
     color: #236ad3;
     margin-top: 28%;
-    font-size: 20px; }
+    font-size: 25px; }
   .seccion-nosotros {
     margin: 0px;
     padding: 50px;
@@ -536,6 +676,18 @@ body {
     grid-gap: 1em;
     margin-left: 10px;
     margin-right: 10px; }
+    .departamentos .departamento-1 {
+      font-size: 15px; }
+    .departamentos:hover {
+      font-size: 20px; }
+    .departamentos .departamento-2 {
+      font-size: 15px; }
+    .departamentos:hover {
+      font-size: 20px; }
+    .departamentos .departamento-3 {
+      font-size: 15px; }
+    .departamentos:hover {
+      font-size: 20px; }
   .TituloDeContacto {
     margin-top: 250px;
     text-align: center;
@@ -635,7 +787,7 @@ body {
   .pie-pagina .grupo-2 small {
     font-size: 7px; }
   .galeria-fila1 img {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 2%;
     width: 110px; }
   div h1 {
@@ -647,8 +799,8 @@ body {
     margin-bottom: 100px; }
   .nosotros-titulo h2 {
     font-family: "Lora", serif;
-    margin-top: 8%;
-    font-size: 20px; }
+    margin-top: 15%;
+    font-size: 25px; }
   .seccion-nosotros {
     margin: 0px;
     padding: 50px;

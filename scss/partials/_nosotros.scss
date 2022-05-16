@@ -6,6 +6,7 @@ div{
         color: map-get($titulos, color1);
         text-align: center;
         padding-top: 400px;
+        font-size: 45px;
     }
 }
 .titulo-hygge{
@@ -25,6 +26,7 @@ div{
         font-family: map-get($titulos, fuente2);
         color: map-get($titulos, color2);
         margin-top: 30%;
+        font-size: 35px;
     }
 }
 

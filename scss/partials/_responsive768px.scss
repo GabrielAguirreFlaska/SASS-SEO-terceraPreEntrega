@@ -84,6 +84,51 @@
         background-repeat: no-repeat;
         background-size: contain;
     }
+
+    //galeria
+    #galeria{
+        .galeria-titulo{
+            h2{
+                padding-top: 60px;
+                padding-bottom: 60px;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .galeria-fila1 img{
+        border: 1px solid white;
+        border-radius: 2%;
+        width: 200px;
+    }
+
+
+    //departamentos seccion
+
+    .departamentos-titulo{
+        h2{
+            padding-top: 60px;
+            padding-bottom: 60px;
+            font-size: 25px;
+        }
+    }
+
+    .departamentos{
+        margin-top: 20%;
+        margin-bottom: 20%;
+        .departamento-1{
+            font-size: 14px;
+        }
+        .departamento-2{
+            font-size: 14px;
+        }
+        .departamento-3{
+            font-size: 14px;
+        }
+    }
+
+
+
     //departamentos 1, 2 y 3
     .titulo-hygge{
         h1{

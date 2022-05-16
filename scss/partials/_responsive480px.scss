@@ -13,6 +13,21 @@
         grid-gap: 1em;
         margin-left: 10px;
         margin-right: 10px;
+        .departamento-1{
+            font-size: 15px;
+        }   &:hover{
+                font-size: 20px;
+            }
+        .departamento-2{
+            font-size: 15px;
+        }   &:hover{
+                font-size: 20px;
+            }
+        .departamento-3{
+            font-size: 15px;
+        }   &:hover{
+                font-size: 20px;
+            }
     }
     //contacto
     .TituloDeContacto{
@@ -170,7 +185,7 @@
     }
     //galeria
     .galeria-fila1 img{
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 2%;
         width: 110px;
     }
@@ -191,8 +206,9 @@
     .nosotros-titulo{
         h2{
             font-family: map-get($titulos, fuente2);
-            margin-top: 8%;
-            font-size: map-get($tamanios, HDosMob);
+            margin-top: 15%;
+            font-size: 25px;
+            
         }
     }
     .seccion-nosotros{

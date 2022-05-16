@@ -2,7 +2,7 @@
 
 #galeria{
     margin-bottom: 11%;
-    margin-top: 20%;
+    margin-top: 10%;
     .galeria-titulo{
         display: flex;
         flex-direction: column;
@@ -11,8 +11,14 @@
         h2{
             text-align: center;
             color: map-get($titulos, color2);
-            padding-top: 3%;
+            padding-top: 80px;
+            padding-bottom: 80px;
             font-family: map-get($titulos, fuente2);
+            font-size: 35px;
+            background-image: url(https://cdn.create.vista.com/api/media/medium/479950672/stock-photo-bed-white-bedding-modern-bedroom?token=);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
         }
     }
 }
@@ -24,8 +30,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     img{
-        border: 2px solid black;
+        border: 2px solid white;
         border-radius: 2%;
-        width: 350px;
+        width: 280px;
     }
 }

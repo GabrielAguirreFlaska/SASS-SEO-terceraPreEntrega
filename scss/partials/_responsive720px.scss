@@ -12,10 +12,39 @@
         grid-gap: 1em;
         margin-left: 10px;
         margin-right: 10px;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        .departamento-1{
+            font-size: 10px;
+            &:hover{
+                font-size: 15px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .departamento-2{
+            font-size: 10px;
+            &:hover{
+                font-size: 15px;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .departamento-3{
+            font-size: 10px;
+            &:hover{
+                font-size: 15px;
+            }
+            img{
+                width: 100%;
+            }
+        }
     }
     //galeria
     .galeria-fila1 img{
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 2%;
         width: 150px;
     }
@@ -25,7 +54,7 @@
             font-family: map-get($titulos, fuente2);
             color: map-get($titulos, color2);
             margin-top: 28%;
-            font-size: 20px;
+            font-size: 25px;
         }
     }
     .seccion-nosotros{
@@ -44,8 +73,4 @@
             margin-bottom: 30px;
         }
     }
-
-
-
-
 }
