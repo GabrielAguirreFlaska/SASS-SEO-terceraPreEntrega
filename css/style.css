@@ -161,7 +161,7 @@ nav ul li ul:before {
 
 .icon__menu {
   font-size: 26px;
-  color: white;
+  color: black;
   cursor: pointer;
   width: 26px;
   height: 100%;
@@ -503,7 +503,7 @@ body {
 @media screen and (max-width: 768px) {
   nav > ul {
     flex-direction: column;
-    background-color: #000000;
+    background-color: white;
     position: fixed;
     left: 0;
     top: 158px;
@@ -728,7 +728,7 @@ body {
         font-size: 12px; }
   nav > ul {
     flex-direction: column;
-    background-color: #000000;
+    background-color: white;
     position: fixed;
     left: 0;
     top: 158px;
