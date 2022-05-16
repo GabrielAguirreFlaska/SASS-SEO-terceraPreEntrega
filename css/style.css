@@ -522,7 +522,8 @@ body {
   #label__check {
     display: block; }
   .icon__menu {
-    display: flex; }
+    display: flex;
+    color: black; }
   #check__menu:checked ~ nav > ul {
     height: 300px;
     visibility: visible;
