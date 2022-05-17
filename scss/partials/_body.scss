@@ -1,5 +1,9 @@
 @import "../variables/variables";
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-image: url(../img/areacomun/IMG_20220403_120526.jpg);
     background-repeat: no-repeat;
